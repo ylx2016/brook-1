@@ -54,9 +54,5 @@ wget -qO brook-pf-mod.sh https://raw.githubusercontent.com/ylx2016/brook-1/maste
 
 ## 手动安装
 
-
-curl -L https://github.com/txthinking/brook/releases/download/v20210101/brook_linux_amd64 -o /usr/bin/brook
-chmod +x /usr/bin/brook
-curl -L https://git.io/getnami | bash && sleep 6 && exec -l $SHELL
-nami install github.com/txthinking/joker
-joker brook relay -f :44343  -t *:443
+curl -L https://github.com/txthinking/brook/releases/download/v20210101/brook_linux_amd64 -o /usr/bin/brook && chmod +x /usr/bin/brook && curl -L https://git.io/getnami | bash && sleep 6 && exec -l $SHELL && nami install github.com/txthinking/joker
+joker brook relay -f :48683  -t jp.green.ppx.pp.ua:443
