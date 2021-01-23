@@ -53,26 +53,10 @@ wget -qO brook-pf-mod.sh https://raw.githubusercontent.com/ylx2016/brook-1/maste
 **如需开启DDNS支持，请在安装完成后按9开启运行监控。**
 
 ## 手动安装
-因国内下载github资源速度缓慢，建议国内机器使用手动安装来使用。
 
-根据您的服务器系统版本下载对应版本。(一般都是第一个)
-```
-https://github.com/txthinking/brook/releases
-```
-创建并将下载的二进制文件上传到 **/usr/local/brook-pf** 目录
 
-在目录建立 **brook.conf** 和 **brook.log** 两个文件，不要写任何内容。(除非你明白你在做什么)
-
-保证目录下有3个文件后赋予权限：
-```
-chmod +x /usr/local/brook-pf
-```
-接下来进入脚本依次执行第10，11，12项。
-
-在执行第11项时可能会出现无法下载的问题，请根据系统类型下载项目内的**brook-pf_debian** 或 **brook-pf_centos**
-
-下载完后改名为 **brook-pf**，上传至 **/etc/init.d/** ，然后执行：
-```
-chmod +x /etc/init.d/brook-pf
-```
-Enjoy~
+curl -L https://github.com/txthinking/brook/releases/download/v20210101/brook_linux_amd64 -o /usr/bin/brook
+chmod +x /usr/bin/brook
+curl -L https://git.io/getnami | bash && sleep 6 && exec -l $SHELL
+nami install github.com/txthinking/joker
+joker brook relay -f :44343  -t *:443
