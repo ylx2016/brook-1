@@ -24,7 +24,7 @@ Brook 端口转发 一键管理脚本再次修改版 基于逗比，yulewang版�
 
 ## 使用方法
 ```shell
-wget -qO brook-pf-mod.sh https://raw.githubusercontent.com/monret/brook/master/brook-pf-mod.sh && chmod +x brook-pf-mod.sh && bash brook-pf-mod.sh
+wget -qO brook-pf-mod.sh https://raw.githubusercontent.com/ylx2016/brook-1/master/brook-pf-mod.sh && chmod +x brook-pf-mod.sh && bash brook-pf-mod.sh
 ```
 执行结果：
 ```
