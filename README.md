@@ -58,4 +58,4 @@ curl -L https://github.com/txthinking/brook/releases/download/v20210101/brook_li
 
 
 最后
-joker brook relay -f :48683  -t jp.green.ppx.pp.ua:443
+joker brook relay -f :4443  -t *:443
